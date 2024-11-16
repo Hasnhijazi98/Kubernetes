@@ -163,17 +163,17 @@ after all is deployed succesfully, you will be able to access your app from anyw
 
 dictionnary commands:
 
-to get more info about nodes/pods				kubectl get nodes/pods -o wide
-to get more info about specific pod				kubectl describe pod <pod_name> 
-to delete a specific pod						kubectl delete pod <pod_name>
-to edit a pod configurations yml file			kubectl edit pod <pod_name>
-to create/update a pod from a file 				kubectl apply -f <file_name>.yaml / kubectl create -f <file_name>.yaml
-to create a replicaset/controllers/deployment	kubectl create -f <file_name>.yaml
-to delete a replicaset(deletes under-pods) 		kubectl delete replicaset <replicaset_name>
-to update a replicaset file						kubectl replace -f <file_name>.yaml
-to scale up/down a replicaset					kubectl scale --replicas=<number> -f <file_name>.yaml / kubectl scale --replicas=<number> <replica-set_name>
-to edit a replicaset (edits made in-memory)		kubectl edit replicaset <replicaset_name>
-to get all info (pods+replicas+deployments) 	kubectl get all
-to get the rollout history/status				kubectl rollout history/status <deployment_name>
-to record the rollout and changes				kubectl create -f <file_name> --record=true
-to rollback from a deployment					kubectl rollout undo deployment/<deployment_name>
+	to get more info about nodes/pods				kubectl get nodes/pods -o wide
+	to get more info about specific pod				kubectl describe pod <pod_name> 
+	to delete a specific pod						kubectl delete pod <pod_name>
+	to edit a pod configurations yml file			kubectl edit pod <pod_name>
+	to create/update a pod from a file 				kubectl apply -f <file_name>.yaml / kubectl create -f <file_name>.yaml
+	to create a replicaset/controllers/deployment	kubectl create -f <file_name>.yaml
+	to delete a replicaset(deletes under-pods) 		kubectl delete replicaset <replicaset_name>
+	to update a replicaset file						kubectl replace -f <file_name>.yaml
+	to scale up/down a replicaset					kubectl scale --replicas=<number> -f <file_name>.yaml / kubectl scale --replicas=<number> <replica-set_name>
+	to edit a replicaset (edits made in-memory)		kubectl edit replicaset <replicaset_name>
+	to get all info (pods+replicas+deployments) 	kubectl get all
+	to get the rollout history/status				kubectl rollout history/status <deployment_name>
+	to record the rollout and changes				kubectl create -f <file_name> --record=true
+	to rollback from a deployment					kubectl rollout undo deployment/<deployment_name>
